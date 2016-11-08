@@ -32,7 +32,7 @@
     <PublisherName>Ark Server Manager</PublisherName>
     <OpenBrowserOnPublish>false</OpenBrowserOnPublish>
     <ApplicationRevision>234</ApplicationRevision>
-    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <ApplicationVersion>1.1.0.234</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>false</BootstrapperEnabled>
@@ -57,7 +57,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>830428608E4443ED2D6C6561382FA65894469D82</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>CD0A463F0E9D39F5BC15F2B7A5828245A7F76263</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>ARK Server Manager_TemporaryKey.pfx</ManifestKeyFile>
@@ -156,6 +156,18 @@
     </Compile>
     <Compile Include="Controls\LabeledTextBlock.xaml.cs">
       <DependentUpon>LabeledTextBlock.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ServerProfilePanels\AutomaticManagement.xaml.cs">
+      <DependentUpon>AutomaticManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ServerProfilePanels\HudAndVisuals.xaml.cs">
+      <DependentUpon>HudAndVisuals.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ServerProfilePanels\ChatAndNotifications.xaml.cs">
+      <DependentUpon>ChatAndNotifications.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ServerProfilePanels\Rules.xaml.cs">
+      <DependentUpon>Rules.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ServerProfilePanels\Administration.xaml.cs">
       <DependentUpon>Administration.xaml</DependentUpon>
@@ -284,6 +296,22 @@
     <Compile Include="UIStyles\Shapes.xaml.cs">
       <DependentUpon>Shapes.xaml</DependentUpon>
     </Compile>
+    <Page Include="Views\ServerProfilePanels\AutomaticManagement.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ServerProfilePanels\HudAndVisuals.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ServerProfilePanels\ChatAndNotifications.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ServerProfilePanels\Rules.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Views\ServerProfilePanels\Administration.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -1,5 +1,5 @@
 ﻿<local:ProfilePanelBase 
-        x:Class="ARK_Server_Manager.Views.ServerProfilePanels.Administration"
+        x:Class="ARK_Server_Manager.Views.ServerProfilePanels.HudAndVisuals"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -28,7 +28,7 @@
                 Grid.Row="0" >
             <TextBlock x:Name="textBlock" 
                        Style="{StaticResource SectionHeaderTextBlock}"
-                       Text="{DynamicResource Section_Administration}" />
+                       Text="{DynamicResource Section_HudAndVisuals}" />
         </Border>
     </Grid>
 </local:ProfilePanelBase>

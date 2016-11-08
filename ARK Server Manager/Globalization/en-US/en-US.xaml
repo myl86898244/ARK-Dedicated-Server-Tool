@@ -39,6 +39,11 @@
     Section Headings    
     -->
     <sys:String x:Key="Section_Installation">Installation</sys:String>
+    <sys:String x:Key="Section_Administration">Administration</sys:String>
+    <sys:String x:Key="Section_AutomaticManagement">Automatic Management</sys:String>
+    <sys:String x:Key="Section_Rules">Rules</sys:String>
+    <sys:String x:Key="Section_ChatAndNotifications">Chat and Notifications</sys:String>
+    <sys:String x:Key="Section_HudAndVisuals">Hud and Visuals</sys:String>
     
     <!-- 
     Main Window 

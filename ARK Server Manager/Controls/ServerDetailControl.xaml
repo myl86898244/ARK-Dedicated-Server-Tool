@@ -614,7 +614,7 @@
                          MinWidth="200" 
                          Style="{StaticResource MainListBoxStyle}" 
                          FontFamily="/ARK Server Manager;component/Fonts/#Montserrat" 
-                         FontSize="18.667" 
+                         FontSize="14" 
                          Margin="0" 
                          Background="{x:Null}" 
                          Foreground="{StaticResource TextLight_Brush}" 

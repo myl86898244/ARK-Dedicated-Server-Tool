@@ -55,6 +55,10 @@ namespace ARK_Server_Manager.Controls
             this.ProfilePanels = new ObservableCollection<ProfilePanelBase>();
             this.ProfilePanels.Add(new Installation());
             this.ProfilePanels.Add(new Administration());
+            this.ProfilePanels.Add(new AutomaticManagement());
+            this.ProfilePanels.Add(new Rules());
+            this.ProfilePanels.Add(new ChatAndNotifications());
+            this.ProfilePanels.Add(new HudAndVisuals());
         }
 
         private void listBox_Loaded(object sender, RoutedEventArgs e)

@@ -12,6 +12,7 @@
 	Title="UITests2"
 	Width="1200" Height="850" MinWidth="1100" MinHeight="500">
     <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter" />
         <!-- Tooltip Style -->
 
         <Style x:Key="{x:Type ToolTip}" TargetType="{x:Type ToolTip}">
@@ -172,6 +173,10 @@
                                     <StackPanel x:Name="serverConnectionPortArea" HorizontalAlignment="Stretch" Margin="0" Orientation="Horizontal" VerticalAlignment="Stretch" d:LayoutOverrides="Width" Height="20">
                                         <TextBlock TextWrapping="Wrap" Text="Server Connection Port:" d:LayoutOverrides="Height, TopPosition, BottomPosition" Foreground="{StaticResource TextLight_Brush}" FontFamily="{StaticResource ServerListBodyFont}" FontSize="{StaticResource ServerListBodyFontSize}" FontWeight="Bold" VerticalAlignment="Center"/>
                                         <TextBlock x:Name="textserverConnectionPort" TextWrapping="Wrap" Text="{Binding Profile.ServerConnectionPort}" d:LayoutOverrides="Height, TopPosition, BottomPosition" Foreground="{StaticResource TextLight_Brush}" FontFamily="{StaticResource ServerListBodyFont}" FontSize="{StaticResource ServerListBodyFontSize}" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                    <StackPanel x:Name="serverRconPortArea" HorizontalAlignment="Stretch" Margin="0" Orientation="Horizontal" VerticalAlignment="Stretch" d:LayoutOverrides="Width" Height="20" Visibility="{Binding Profile.RCONEnabled, Converter={StaticResource BooleanToVisibilityConverter}}">
+                                        <TextBlock TextWrapping="Wrap" Text="Rcon Port:" d:LayoutOverrides="Height, TopPosition, BottomPosition" Foreground="{StaticResource TextLight_Brush}" FontFamily="{StaticResource ServerListBodyFont}" FontSize="{StaticResource ServerListBodyFontSize}" FontWeight="Bold" VerticalAlignment="Center"/>
+                                        <TextBlock x:Name="textserverRconPort" TextWrapping="Wrap" Text="{Binding Profile.RCONPort}" d:LayoutOverrides="Height, TopPosition, BottomPosition" Foreground="{StaticResource TextLight_Brush}" FontFamily="{StaticResource ServerListBodyFont}" FontSize="{StaticResource ServerListBodyFontSize}" Margin="10,0,0,0" VerticalAlignment="Center"/>
                                     </StackPanel>
                                 </StackPanel>
                                 <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Right" Margin="0,0,10,47.667" Width="196.734" Height="Auto" Background="#FFA8A8A8">
